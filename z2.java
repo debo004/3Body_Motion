@@ -18,7 +18,7 @@ public class z2 extends JPanel implements ActionListener {
         bodies[1] = new Body(300, 300, 0, 2, 1e11); // Body 2
         bodies[2] = new Body(500, 300, 0, -2, 1e11); // Body 3
 
-        Timer timer = new Timer(1, this); // Update every 10ms
+        Timer timer = new Timer(1, this); // Update every 1 ms
         timer.start();
     }
 
