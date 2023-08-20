@@ -14,18 +14,18 @@ And as the value of G is so small so to write code we have to make the equation 
 2. The gravitational forces acting on each object due to the other two. For object A, the force due to B and C would be calculated as follows (using Newton's law of universal gravitation):
 For the force from B:
 
-### F_(AB) = G * ( m_A * m_B ) / r_(AB)^2
+#### F_(AB) = G * ( m_A * m_B ) / r_(AB)^2
 
 3. Using Newton's second law (F = ma) calculating the accelerations of each object. Dividing the forces by the mass of the object to obtain acceleration vectors:
 For object A:
 
-### a_Ax = F_(AB)x / m_A
-### a_Ay = F_(AB)y / m_A
+#### a_Ax = F_(AB)x / m_A
+#### a_Ay = F_(AB)y / m_A
 Repeating this for objects B and C, considering the forces from the other two objects.
 
 4. Numerically integrating the accelerations to obtain velocities and positions over time to update the velocities and positions at small time steps (Δt) forward in time .
 
-### x_A ( t + △t ) = vx_A ( t ) + ax_A ( t ) * △t
+#### x_A ( t + △t ) = vx_A ( t ) + ax_A ( t ) * △t
 Repeating this for all objects and update their positions and velocities .
 
 5. Continuing the integration process for the desired time duration, repeatedly updating positions and velocities until you reach the desired time t.
